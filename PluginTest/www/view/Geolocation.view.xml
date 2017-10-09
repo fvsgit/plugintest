@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="plugintest.controller.Geolocation"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>titGeolocation}" showNavButton="true" navButtonPress="onNavigateBack" class="sapUiResponsiveContentPadding">
+				<content>
+					<VBox>
+						<Button id="btnGetLocation" text="Get GPS Location" icon="sap-icon://map-2" press="onPress_btnGetLocation"></Button>
+						<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+								<Label text="Latitude"/>
+								<Text text="{ViewModel>/Latitude}"/>
+								<Label text="Longitude"/>
+								<Text text="{ViewModel>/Longitude}"/>
+								<Label text="Altitude"/>
+								<Text text="{ViewModel>/Altitude}"/>
+								<Label text="Accuracy"/>
+								<Text text="{ViewModel>/Accuracy}"/>
+								<Label text="Altitude Accuracy"/>
+								<Text text="{ViewModel>/AltitudeAccuracy}"/>
+								<Label text="Heading"/>
+								<Text text="{ViewModel>/Heading}"/>
+								<Label text="Speed"/>
+								<Text text="{ViewModel>/Speed}"/>
+								<Label text="Timestamp"/>
+								<Text text="{ViewModel>/Timestamp}"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

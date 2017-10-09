@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="plugintest.controller.Camera"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{i18n>titCamera}" showNavButton="true" navButtonPress="onNavigateBack" class="sapUiResponsiveContentPadding">
+				<content>
+					<VBox>
+						<Button id="btnTakePhoto" text="Take Photo" press="onPress_btnTakePhoto" icon="sap-icon://camera"></Button>
+						<Image id="imgPhoto" width="100%" src=""></Image>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

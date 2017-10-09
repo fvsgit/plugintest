@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "keystore": "c:\\fvs.keystore",
+      "storePassword": "Chivas300",
+      "alias": "fvs",
+      "password": "Chivas300",
+      "keystoreType": ""
+    }
+  }
+}

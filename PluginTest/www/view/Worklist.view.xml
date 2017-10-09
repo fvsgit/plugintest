@@ -1,0 +1,11 @@
+<mvc:View controllerName="plugintest.controller.Worklist" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic">
+	<Page title="{i18n>appTitle}">
+		<content>
+			<List items="{plugins>/}">
+				<items>
+					<StandardListItem title="{plugins>name}" description="{plugins>description}" icon="{plugins>icon}" iconDensityAware="false" iconInset="false" type="Navigation" press="onPress_Plugin"/>
+				</items> 
+			</List>
+		</content>
+	</Page>
+</mvc:View>
