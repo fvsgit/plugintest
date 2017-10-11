@@ -5,8 +5,12 @@
 			<Page title="{i18n>titBarcodeScanner}" showNavButton="true" navButtonPress="onNavigateBack" class="sapUiResponsiveContentPadding">
 				<content>
 					<VBox>
-						<Button id="btnScanBacode" text="Scan Barcode" icon="sap-icon://bar-code" press="onPress_btnScanBacode"></Button>
-						<TextArea value="None" width="100%" growing="true"></TextArea>
+            <HBox>
+              <Button id="btnScanBacode" text="Scan Barcodes" icon="sap-icon://bar-code" press="onPress_btnScanBacode"></Button>
+              <Button id="btnScanBacodePDF" text="Scan PDF 417 Barcodes" icon="sap-icon://bar-code" press="onPress_btnScanBacodePDF"></Button>
+            </HBox>
+						
+						<TextArea value="{ViewModel>/Result}" width="100%" growing="true"></TextArea>
 					</VBox>
 				</content>
 			</Page>

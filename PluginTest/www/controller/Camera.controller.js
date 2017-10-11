@@ -24,16 +24,13 @@ sap.ui.define([
         _setOptions: function (srcType) {
             var options = {
                 // Some common settings are 20, 50, and 100 
-                quality: 50,
+                quality: 80,
                 destinationType: Camera.DestinationType.FILE_URI,
                 // In this app, dynamically set the picture source, Camera or photo gallery 
                 sourceType: srcType,
                 encodingType: Camera.EncodingType.JPEG,
                 mediaType: Camera.MediaType.PICTURE,
-                allowEdit: true,
-                correctOrientation: true,  //Corrects Android orientation quirks 
-                targetHeight: 100,
-                targetWidth: 100
+                correctOrientation: true //Corrects Android orientation quirks 
             }
             return options;
         },

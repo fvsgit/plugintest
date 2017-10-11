@@ -107,4 +107,7 @@
   <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
   <preference name="android-minSdkVersion" value="14" />
   <preference name="android-targetSdkVersion" value="25" />
+  <plugin name="phonegap-plugin-barcodescanner" spec="~6.0.8">
+    <variable name="CAMERA_USAGE_DESCRIPTION" value="ToScanBarcodes" />
+  </plugin>
 </widget>
